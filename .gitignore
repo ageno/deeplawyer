@@ -1,0 +1,6 @@
+/vendor/
+.travis/phar-private.*
+box.json
+deeplawyer.phar
+deeplawyer.phar.pubkey
+deeplawyer.phar.version

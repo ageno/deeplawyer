@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+date_default_timezone_set('UTC');
+
+set_time_limit(0);
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Ageno\Command\ConfigCommand;
+
+$application = new Application('Deeplawyer', '@package_version@');
+$application->add(new ConfigCommand());
+$application->run();
