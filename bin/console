@@ -9,7 +9,11 @@ require __DIR__ . '/../vendor/autoload.php';
 
 use Symfony\Component\Console\Application;
 use Ageno\Command\ConfigCommand;
+use Ageno\Command\UpdateCommand;
+use Ageno\Command\RollbackCommand;
 
 $application = new Application('Deeplawyer', '@package_version@');
 $application->add(new ConfigCommand());
+$application->add(new UpdateCommand());
+$application->add(new RollbackCommand());
 $application->run();
